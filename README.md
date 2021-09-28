@@ -10,7 +10,7 @@ IBM India Software Labs Good Tech Scholars Program
 
 #Problem Statement 
 
-Due to covid 19, the colleges shut down for the past one and half years. As per the order from the State government, Colleges will be back to their offline work from October in Kerala for final year students and masters or pg students. So, due to covid protocols, it is necessary to keep registers in colleges to keep track of student activities. And the Registers are maintained by manually entering the details such as name, phone number, entring time, leaving time. So, if a student is affected with Covid 19, it should be hard to find the primary contacts of the student as it takes hours of work.
+Due to covid 19, the colleges shut down for the past one and half years. As per the order from the State government, Colleges will be back to their offline work from October in Kerala for Degree final year students, Masters and PG students. So, due to covid protocols, it is necessary to keep registers in colleges to keep track of student activities. And the Registers are maintained by manually entering the details such as name, phone number, entring time, leaving time. So, if a student is affected with Covid 19, it should be hard to find the primary contacts of the student as it takes hours of work.
 
 #Personas of the System 
 1. Register / import people details
