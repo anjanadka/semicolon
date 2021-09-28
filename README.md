@@ -1,4 +1,4 @@
-# semicolon
+# Semi Colon
 IBM India Software Labs Good Tech Scholars Program
 
 #List of Contributers 
