@@ -3,17 +3,20 @@ import 'package:flutter_app/search.dart';
 import './main.dart';
 
 class AdminNotifications extends StatelessWidget {
+  const AdminNotifications({Key? key}) : super(key: key);
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Covid Track App'),
+        title: const Text('Covid Track App'),
         actions: <Widget>[
           Container(
             child: ElevatedButton(
-              child: Text('Logout '),
+              child: const Text('Logout '),
               onPressed: () {
                 Navigator.of(context).pushReplacement(
-                    MaterialPageRoute(builder: (context) => MyApp()));
+                    MaterialPageRoute(builder: (context) => const MyApp()));
               },
             ),
           )
@@ -34,7 +37,7 @@ class AdminNotifications extends StatelessWidget {
                 ],
               )),*/
           Card(
-            margin: EdgeInsets.all(20.0),
+            margin: const EdgeInsets.all(20.0),
             child: Column(
               children: [
                 const ListTile(
@@ -46,9 +49,9 @@ class AdminNotifications extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     Container(
-                      margin: EdgeInsets.all(20.0),
+                      margin: const EdgeInsets.all(20.0),
                       child: ElevatedButton(
-                        child: Text('Search'),
+                        child: const Text('Search'),
                         onPressed: () {
                           Navigator.push(
                               context,
