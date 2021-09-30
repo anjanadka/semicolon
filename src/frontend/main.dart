@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import './new_page.dart';
+import 'home_people.dart';
 import './admin_notification.dart';
-
-
 
 void main() {
   runApp(MaterialApp(
@@ -10,11 +8,13 @@ void main() {
       brightness: Brightness.light,
       primarySwatch: Colors.deepOrange,
     ),
-    home: MyApp(),
+    home: const MyApp(),
   ));
 }
 
 class MyApp extends StatefulWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   _State createState() => _State();
 }
@@ -29,7 +29,7 @@ class _State extends State<MyApp> {
         appBar: AppBar(title: Text('Covid Track App'), actions: <Widget>[
           Container(
             child: ElevatedButton(
-                child: Icon(Icons.person),
+                child: const Icon(Icons.person),
                 onPressed: () {
                   Navigator.of(context).pushReplacement(MaterialPageRoute(
                       builder: (context) => AdminNotifications()));
@@ -37,14 +37,14 @@ class _State extends State<MyApp> {
           ),
         ]),
         body: Padding(
-            padding: EdgeInsets.all(10),
+            padding: const EdgeInsets.all(10),
             child: ListView(
               children: <Widget>[
                 Container(
                     alignment: Alignment.center,
-                    padding: EdgeInsets.all(10),
-                    child: Text(
-                      'Covid Track',
+                    padding: const EdgeInsets.all(10),
+                    child: const Text(
+                      'COVID TRACK',
                       style: TextStyle(
                           color: Colors.deepOrange,
                           fontWeight: FontWeight.w600,
@@ -52,27 +52,27 @@ class _State extends State<MyApp> {
                     )),
                 Container(
                     alignment: Alignment.center,
-                    padding: EdgeInsets.fromLTRB(10, 200, 10, 0),
-                    child: Text(
+                    padding: const EdgeInsets.fromLTRB(10, 200, 10, 0),
+                    child: const Text(
                       'LOGIN',
                       style: TextStyle(fontSize: 30),
                     )),
                 Container(
-                  padding: EdgeInsets.fromLTRB(10, 40, 10, 0),
+                  padding: const EdgeInsets.fromLTRB(10, 40, 10, 0),
                   child: TextField(
                     controller: nameController,
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                       border: OutlineInputBorder(),
                       labelText: 'UserName',
                     ),
                   ),
                 ),
                 Container(
-                  padding: EdgeInsets.fromLTRB(10, 20, 10, 0),
+                  padding: const EdgeInsets.fromLTRB(10, 20, 10, 0),
                   child: TextField(
                     obscureText: true,
                     controller: passwordController,
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                       border: OutlineInputBorder(),
                       labelText: 'Password',
                     ),
@@ -80,17 +80,19 @@ class _State extends State<MyApp> {
                 ),
                 Container(
                     height: 80,
-                    padding: EdgeInsets.fromLTRB(10, 40, 10, 0),
+                    padding: const EdgeInsets.fromLTRB(10, 40, 10, 0),
+                    // ignore: deprecated_member_use
                     child: RaisedButton(
                       textColor: Colors.white,
                       color: Colors.deepOrange,
-                      child: Text('Login'),
+                      child: const Text('Login'),
                       onPressed: () {
-                        Navigator.of(context).pushReplacement(
-                            MaterialPageRoute(builder: (context) => NewPage()));
+                        Navigator.of(context).pushReplacement(MaterialPageRoute(
+                            builder: (context) => const NewPage()));
                       },
                     )),
               ],
             )));
   }
 }
+
