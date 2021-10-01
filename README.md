@@ -22,7 +22,10 @@ Due to covid 19, the colleges shut down for the past one and half years. As per 
 7. Notify primary contact peoples
 8. Display symptoms of covid 19
 
-#Arctitecure
+#Arctitecure-user
+
 ![alt text](https://github.com/anjanadka/semicolon/blob/main/presentation/2.png)
 
+#Arctitecure-admin
 
+![alt text](https://github.com/anjanadka/semicolon/blob/main/presentation/3.png)
